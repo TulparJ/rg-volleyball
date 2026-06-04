@@ -236,11 +236,10 @@ export function Pricing() {
               </ul>
               <a
                 href="#contact"
-                className={`block text-center py-3.5 rounded-lg font-bold text-sm no-underline transition-all duration-200 hover:-translate-y-0.5 ${
-                  p.featured
-                    ? 'bg-brand-blue text-white hover:bg-blue-700'
-                    : 'border border-slate-200 text-navy hover:bg-navy hover:text-white hover:border-navy'
-                }`}
+                className={`block text-center py-3.5 rounded-lg font-bold text-sm no-underline transition-all duration-200 hover:-translate-y-0.5 ${p.featured
+                  ? 'bg-brand-blue text-white hover:bg-blue-700'
+                  : 'border border-slate-200 text-navy hover:bg-navy hover:text-white hover:border-navy'
+                  }`}
               >
                 {p.cta}
               </a>
@@ -446,7 +445,7 @@ export function CTABanner() {
           >
             Book Free Consultation <Icon2 name="arrow" size={18} />
           </a>
-          <a href="mailto:rgvolleyball@email.com" className="btn-outline-white text-base py-4 px-9">
+          <a href="mailto:tulparjanbolat0522@gmail.com" className="btn-outline-white text-base py-4 px-9">
             Email Coach
           </a>
         </div>
@@ -485,8 +484,8 @@ export function Contact() {
 
             <div className="flex flex-col gap-7 mb-14">
               {[
-                { icon: 'mail', label: 'Email', value: 'rgvolleyball@email.com' },
-                { icon: 'phone', label: 'Phone', value: '(609) 555-0123' },
+                { icon: 'mail', label: 'Email', value: 'tulparjanbolat0522@gmail.com' },
+                { icon: 'phone', label: 'Phone', value: '(609) 436-8537' },
                 { icon: 'location', label: 'Area', value: 'Princeton, NJ & Surrounding Communities' },
                 { icon: 'calendar', label: 'Availability', value: 'Evenings & Weekends — Flexible' },
               ].map(c => (
