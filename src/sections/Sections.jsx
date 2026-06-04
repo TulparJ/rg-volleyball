@@ -263,9 +263,9 @@ const GALLERY_ITEMS = [
   { src: '/coach-spike.png', label: 'Spike at the Net', pos: 'center 20%' },
   { src: '/coach-match.png', label: 'Match Competition', pos: 'center top' },
   { src: '/coach-holding.png', label: 'Pre-Game Focus', pos: 'center top' },
-  { label: 'Serving Technique', placeholder: true },
-  { label: 'Team Drills', placeholder: true },
-  { label: 'Court Footwork', placeholder: true },
+  { src: '/coach-mongolia-team.jpg', label: 'Mongolia Championship', pos: 'center 30%' },
+  { src: '/coach-block.jpg', label: 'Blocking at the Net', pos: 'center 20%' },
+  { src: '/coach-championship.jpg', label: 'Championship Match', pos: 'center 25%' },
 ]
 
 export function Gallery() {
