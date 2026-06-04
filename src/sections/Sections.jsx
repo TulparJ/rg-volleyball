@@ -530,7 +530,8 @@ export function Contact() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5" data-netlify="true" name="contact">
+                  <input type="hidden" name="form-name" value="contact" />
                   <h3 className="text-white font-bold text-base mb-1">Book a Free Consultation</h3>
 
                   <div className="grid grid-cols-2 gap-4">
