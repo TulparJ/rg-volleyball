@@ -461,7 +461,16 @@ export function Contact() {
   const [form, setContactForm] = useContactState({ parentName: '', playerName: '', playerAge: '', experience: '', phone: '', email: '', trainingType: '', message: '' })
   const [submitted, setSubmitted] = useContactState(false)
 
-  const handleSubmit = (e) => { e.preventDefault(); setSubmitted(true) }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString(),
+    })
+    setSubmitted(true)
+  }
   const update = (k) => (e) => setContactForm(f => ({ ...f, [k]: e.target.value }))
 
   const inputClass = "w-full bg-white/[0.06] border border-white/[0.12] rounded-lg px-3.5 py-3 text-white text-sm outline-none font-dm placeholder:text-white/30 focus:border-brand-accent/60 transition-colors duration-200"
